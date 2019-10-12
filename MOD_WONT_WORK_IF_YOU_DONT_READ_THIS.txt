@@ -1,0 +1,2 @@
+This mod uses Ommel to modify files (https://github.com/NoitaOmmel/Ommel)
+You will have to run the game with it for the Ommel-enabled parts of this mod to work.

@@ -1,0 +1,57 @@
+<OmmelMod placeholder_prefix="@MOD_CONFIG@" strings="1">
+<Copy>
+	<SourceFile>ommeldata/lidl/lidl_fps.xml</SourceFile>
+</Copy>
+	<Copy>
+		<SourceFile>ommeldata/lidl/lidl_fps.lua</SourceFile>
+	</Copy>
+	<LuaInsert>
+		<SourceFile>ommeldata/inject/director_init.lua</SourceFile>
+		<TargetFile>data/scripts/director_init.lua</TargetFile>
+		<Where>
+			<Statements>
+				<FunctionCall select="1">
+					<Function>
+						<Variable name="print" />
+					</Function>
+					<Arguments>
+						<StringLiteral value="Initialized random weather" />
+					</Arguments>
+				</FunctionCall>
+			</Statements>
+		</Where>
+	</LuaInsert>
+	<Overwrite>
+		<SourceFile>ommeldata/shaders/post_final.frag</SourceFile>
+		<Placeholders file="settings.xml">
+			<Placeholder key="dither" />
+			<Placeholder key="hiq" />
+			<Placeholder key="refraction" />
+			<Placeholder key="lighting" />
+			<Placeholder key="fog_of_war" />
+			<Placeholder key="glow" />
+			<Placeholder key="gamma_correction" />
+			<Placeholder key="path_debug" />
+			<Placeholder key="distortion_time_spd" />
+			<Placeholder key="distortion_scale_mult1" />
+			<Placeholder key="distortion_scale_mult2" />
+			<Placeholder key="reflection_samples" />
+			<Placeholder key="reflection_sample_distance" />
+			<Placeholder key="reflection_intensity" />
+			<Placeholder key="fog_foreground" />
+			<Placeholder key="fog_background" />
+			<Placeholder key="noise_tex_size" />
+			<Placeholder key="extra_bright_intensity" />
+			<Placeholder key="low_health_indicator_color" />
+			<Placeholder key="shading_bright_bits_alpha" />
+			<Placeholder key="shading_liquid_bits_alpha" />
+		</Placeholders>
+	</Overwrite>
+	<XMLMerge>
+		<SourceFile>ommeldata/magic_numbers.xml</SourceFile>
+		<Placeholders file="settings.xml">
+			<Placeholder key="virtual_resolution_x" />
+			<Placeholder key="virtual_resolution_y" />
+		</Placeholders>
+	</XMLMerge>
+</OmmelMod>

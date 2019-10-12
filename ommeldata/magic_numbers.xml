@@ -1,0 +1,4 @@
+<MagicNumbers
+	VIRTUAL_RESOLUTION_X = "@MOD_CONFIG@virtual_resolution_x"
+	VIRTUAL_RESOLUTION_Y = "@MOD_CONFIG@virtual_resolution_y"
+/>

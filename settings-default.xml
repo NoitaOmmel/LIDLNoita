@@ -1,0 +1,30 @@
+<Placeholders>
+	<Placeholder key="dither" value="true" />
+	<Placeholder key="hiq" value="true" />
+	<Placeholder key="refraction" value="true" />
+	<Placeholder key="lighting" value="true" />
+	<Placeholder key="fog_of_war" value="true" />
+	<Placeholder key="glow" value="true" />
+	<Placeholder key="gamma_correction" value="true" />
+	<Placeholder key="path_debug" value="true" />
+
+	<Placeholder key="distortion_time_spd" value="10.0" />
+	<Placeholder key="distortion_scale_mult1" value="50.0" />
+	<Placeholder key="distortion_scale_mult2" value="0.002" />
+
+	<Placeholder key="reflection_samples" value="50.0" />
+	<Placeholder key="reflection_sample_distance" value="0.0045" />
+	<Placeholder key="reflection_intensity" value="0.65" />
+
+	<Placeholder key="fog_foreground" value="vec4(0.6, 0.6, 0.6, 1.0)" />
+	<Placeholder key="fog_background" value="vec3(0.7, 0.7, 0.7)" />
+	<Placeholder key="noise_tex_size" value="vec2(1024.0, 1024.0)" />
+	<Placeholder key="extra_bright_intensity" value="0.25" />
+	<Placeholder key="low_health_indicator_color" value="vec3(0.7, 0.1, 0.0)" />
+
+	<Placeholder key="shading_bright_bits_alpha" value="0.25" />
+	<Placeholder key="shading_liquid_bits_alpha" value="0.99" />
+
+	<Placeholder key="virtual_resolution_x" value="427" />
+	<Placeholder key="virtual_resolution_y" value="242" />
+</Placeholders>
