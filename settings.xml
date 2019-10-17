@@ -1,10 +1,10 @@
 <Placeholders>
-	<Placeholder key="dither" value="true" />
+	<Placeholder key="dither" value="false" />
 	<Placeholder key="hiq" value="true" />
-	<Placeholder key="refraction" value="true" />
+	<Placeholder key="refraction" value="false" />
 	<Placeholder key="lighting" value="true" />
 	<Placeholder key="fog_of_war" value="true" />
-	<Placeholder key="glow" value="true" />
+	<Placeholder key="glow" value="false" />
 	<Placeholder key="gamma_correction" value="true" />
 	<Placeholder key="path_debug" value="true" />
 
@@ -25,6 +25,6 @@
 	<Placeholder key="shading_bright_bits_alpha" value="0.25" />
 	<Placeholder key="shading_liquid_bits_alpha" value="0.99" />
 
-	<Placeholder key="virtual_resolution_x" value="427" />
-	<Placeholder key="virtual_resolution_y" value="242" />
+	<Placeholder key="virtual_resolution_x" value="320" />
+	<Placeholder key="virtual_resolution_y" value="180" />
 </Placeholders>

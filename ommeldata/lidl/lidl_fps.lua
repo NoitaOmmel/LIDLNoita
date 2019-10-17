@@ -27,9 +27,6 @@ end)
 
 
 async(function()
-
-	DEBUG_MARK(50, 50, "test")
-
 	gui = GuiCreate()
 end)
 --[[

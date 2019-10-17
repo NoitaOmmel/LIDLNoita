@@ -1,10 +1,27 @@
 <OmmelMod placeholder_prefix="@MOD_CONFIG@" strings="1">
-<Copy>
-	<SourceFile>ommeldata/lidl/lidl_fps.xml</SourceFile>
-</Copy>
 	<Copy>
-		<SourceFile>ommeldata/lidl/lidl_fps.lua</SourceFile>
+		<SourceFIle>ommeldata/lidl/lidl_fps.xml</SourceFile>
 	</Copy>
+	<Copy>
+		<SourceFIle>ommeldata/lidl/lidl_fps.lua</SourceFile>
+	</Copy>
+
+	<Bulk>
+		<SourceFile>ommeldata/dofile_cacher.lua</SourceFile>
+		<TargetPattern>^data/.*\.lua$</TargetPattern>
+		<TargetExceptionRules>
+				<TargetExceptionRule>data/scripts/props/pressure_plate.lua</TargetExceptionRule>
+				<TargetExceptionRule>data/temp/.*</TargetExceptionRule>
+				<TargetExceptionRule>data/scripts/gun/procedural/wand_petri.lua</TargetExceptionRule>
+		</TargetExceptionRules>
+
+		<Operations>
+				<LuaEvent>
+						<Event>top</Event>
+				</LuaEvent>
+		</Operations>
+	</Bulk>
+
 	<LuaInsert>
 		<SourceFile>ommeldata/inject/director_init.lua</SourceFile>
 		<TargetFile>data/scripts/director_init.lua</TargetFile>
@@ -21,6 +38,7 @@
 			</Statements>
 		</Where>
 	</LuaInsert>
+
 	<Overwrite>
 		<SourceFile>ommeldata/shaders/post_final.frag</SourceFile>
 		<Placeholders file="settings.xml">
@@ -47,6 +65,7 @@
 			<Placeholder key="shading_liquid_bits_alpha" />
 		</Placeholders>
 	</Overwrite>
+	
 	<XMLMerge>
 		<SourceFile>ommeldata/magic_numbers.xml</SourceFile>
 		<Placeholders file="settings.xml">
