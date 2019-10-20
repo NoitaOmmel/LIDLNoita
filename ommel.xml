@@ -1,9 +1,9 @@
 <OmmelMod placeholder_prefix="@MOD_CONFIG@" strings="1">
 	<Copy>
-		<SourceFIle>ommeldata/lidl/lidl_fps.xml</SourceFile>
+		<SourceFile>ommeldata/lidl/lidl_fps.xml</SourceFile>
 	</Copy>
 	<Copy>
-		<SourceFIle>ommeldata/lidl/lidl_fps.lua</SourceFile>
+		<SourceFile>ommeldata/lidl/lidl_fps.lua</SourceFile>
 	</Copy>
 
 	<Bulk>
