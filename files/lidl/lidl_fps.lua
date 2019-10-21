@@ -2,10 +2,12 @@ dofile( "data/scripts/lib/coroutines.lua" )
 dofile( "data/scripts/lib/utilities.lua" )
 
 
+print("LIDL NOITA FPS LOADED")
+
 local gui = nil
 local fps = 0
 
-local last_time = os.clock()
+local last_time = GameGetRealWorldTimeSinceStarted()
 async_loop(function()
 	if gui ~= nil then
 		GuiStartFrame( gui )
@@ -19,7 +21,7 @@ async_loop(function()
 end)
 
 async_loop(function()
-	local cur_time = os.clock()
+	local cur_time = GameGetRealWorldTimeSinceStarted()
 	fps = math.floor((1 / (cur_time - last_time)) * 60)
 	last_time = cur_time
 	wait(60)
@@ -38,3 +40,4 @@ end)
 	EntityKill( GetUpdatedEntityID() )
 end)
 ]]
+

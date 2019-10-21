@@ -1,7 +1,6 @@
 <Entity>	
-
 	<LuaComponent
-		script_source_file="data/lidl/lidl_fps.lua"
+		script_source_file="mods/lidl_noita/files/lidl/lidl_fps.lua"
 		vm_type="ONE_PER_COMPONENT_INSTANCE"
 		enable_coroutines="1"
 		execute_on_added="1"

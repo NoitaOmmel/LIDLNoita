@@ -1,11 +1,4 @@
 <OmmelMod placeholder_prefix="@MOD_CONFIG@" strings="1">
-	<Copy>
-		<SourceFile>ommeldata/lidl/lidl_fps.xml</SourceFile>
-	</Copy>
-	<Copy>
-		<SourceFile>ommeldata/lidl/lidl_fps.lua</SourceFile>
-	</Copy>
-
 	<Bulk>
 		<SourceFile>ommeldata/dofile_cacher.lua</SourceFile>
 		<TargetPattern>^data/.*\.lua$</TargetPattern>
@@ -21,23 +14,6 @@
 				</LuaEvent>
 		</Operations>
 	</Bulk>
-
-	<LuaInsert>
-		<SourceFile>ommeldata/inject/director_init.lua</SourceFile>
-		<TargetFile>data/scripts/director_init.lua</TargetFile>
-		<Where>
-			<Statements>
-				<FunctionCall select="1">
-					<Function>
-						<Variable name="print" />
-					</Function>
-					<Arguments>
-						<StringLiteral value="Initialized random weather" />
-					</Arguments>
-				</FunctionCall>
-			</Statements>
-		</Where>
-	</LuaInsert>
 
 	<Overwrite>
 		<SourceFile>ommeldata/shaders/post_final.frag</SourceFile>
