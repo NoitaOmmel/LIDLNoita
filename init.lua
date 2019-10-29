@@ -1,5 +1,7 @@
 world_loaded = false
 
+print("FFI" .. tostring(ffi))
+
 function OnWorldPreUpdate()
 	if world_loaded then return end
 	world_loaded = true
